@@ -55,7 +55,9 @@ class AppButton extends StatelessWidget {
           color: variant.borderColor,
           width: 1.0,
         ),
-        borderRadius: BorderRadius.circular(Dimens.radiusMedium),
+        borderRadius: BorderRadius.circular(
+          Dimens.radiusCircular,
+        ),
       ),
       child: Material(
         color: Colors.transparent,
@@ -119,7 +121,7 @@ class AppButton extends StatelessWidget {
               Text(
                 title,
                 textAlign: TextAlign.center,
-                style: Styles.h6HeadingBlack.copyWith(color: primaryColor),
+                style: Styles.buttonTextLabelStyle,
               ),
               if (actionIcon != null) actionIcon ?? const SizedBox.shrink(),
             ],

@@ -40,6 +40,7 @@ dependencies:
   go_router: ^13.1.0
   go_router_builder: ^2.4.1
   one_context: ^4.0.0
+  flame: ^1.9.1
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/login/
+    - assets/images/splash/
 
   fonts:
     - family: Coiny

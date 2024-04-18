@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/values/colors.dart';
 
 abstract class Styles {
-  static const _poppins = 'Poppins';
+  static const _coiny = 'Coiny';
 
   static const TextStyle errorTextStyleRed = TextStyle(
-    fontFamily: _poppins,
+    fontFamily: _coiny,
     fontSize: 10.0,
     fontWeight: FontWeight.w400,
     height: 14.0 / 10.0,
@@ -13,7 +13,7 @@ abstract class Styles {
   );
 
   static const TextStyle errorTextStyleWhite = TextStyle(
-    fontFamily: _poppins,
+    fontFamily: _coiny,
     fontSize: 10.0,
     fontWeight: FontWeight.w400,
     height: 14.0 / 10.0,
@@ -21,7 +21,7 @@ abstract class Styles {
   );
 
   static const TextStyle h6HeadingWhite = TextStyle(
-    fontFamily: _poppins,
+    fontFamily: _coiny,
     fontSize: 12.0,
     fontWeight: FontWeight.w400,
     color: ThemeColors.white,
@@ -29,7 +29,7 @@ abstract class Styles {
   );
 
   static const TextStyle h6HeadingBlack = TextStyle(
-    fontFamily: _poppins,
+    fontFamily: _coiny,
     fontSize: 14.0,
     fontWeight: FontWeight.w500,
     color: ThemeColors.black,
@@ -37,9 +37,17 @@ abstract class Styles {
   );
 
   static const TextStyle inputLabelStyle = TextStyle(
-    fontFamily: _poppins,
+    fontFamily: _coiny,
     fontSize: 14.0,
     fontWeight: FontWeight.w400,
     color: ThemeColors.white,
+  );
+
+  static const TextStyle buttonTextLabelStyle = TextStyle(
+    fontFamily: _coiny,
+    fontSize: 30.0,
+    fontWeight: FontWeight.w400,
+    color: ThemeColors.white,
+    height: 16.0 / 14.0,
   );
 }

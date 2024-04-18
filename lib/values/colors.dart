@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class ThemeColors {
-  static const primaryColor = Color(0xFF1E1D2E);
+  static const primaryColor = Color(0xFFFFA500);
   static const primaryAccent = Color(0xFFFFD700);
   static const black = Color(0xFF000000);
   static const red = Color(0xFFE53935);
@@ -14,6 +14,7 @@ abstract class ThemeColors {
   static const green = Color(0xFF8FCB85);
   static const grey = Color(0xFFB8BDC0);
   static const blue = Color(0xFF2364E1);
+  static const greenBackground = Color(0xFFABC300);
 }
 
 @immutable

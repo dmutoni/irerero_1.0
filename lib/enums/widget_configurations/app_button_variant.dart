@@ -43,7 +43,7 @@ extension AppButtonVariantContent on AppButtonVariant {
   Color get borderColor {
     switch (this) {
       case AppButtonVariant.dark:
-        return ThemeColors.black;
+        return Colors.transparent;
       case AppButtonVariant.light:
         return ThemeColors.grey;
     }
