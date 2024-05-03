@@ -17,6 +17,8 @@ abstract class Dimens {
   static const marginLarge = 32.0;
   static const marginXLarge = 48.0;
   static const marginForty = 40.0;
+  static const marginSeventy = 70.0;
+  static const marginTopOfTheScreen = 80.0;
 
   static const radiusXSmall = 4.0;
   static const radiusSmall = 6.0;

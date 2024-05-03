@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/helpers/config.dart';
 import 'package:flutter_starter_template/screens/authentication/login_screen.dart';
 import 'package:flutter_starter_template/screens/authentication/signup_screen.dart';
+import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/screens/common/error_screen.dart';
 import 'package:flutter_starter_template/screens/home_screen.dart';
 import 'package:flutter_starter_template/widgets/auth_checker.dart';
@@ -47,6 +48,11 @@ final routerProvider = Provider<GoRouter>(
           name: 'loginScreen',
           path: AppRoutes.loginScreenRouteName,
           builder: (context, state) => const LoginScreen(),
+        ),
+        GoRoute(
+          name: 'chooseCharacterScreen',
+          path: AppRoutes.chooseCharacterScreenRouteName,
+          builder: (context, state) => const ChooseCharacterScreen(),
         ),
       ],
       errorBuilder: (context, state) => const ErrorScreen(),

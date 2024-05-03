@@ -71,6 +71,7 @@ flutter:
   assets:
     - assets/images/login/
     - assets/images/splash/
+    - assets/images/characters/
 
   fonts:
     - family: Coiny

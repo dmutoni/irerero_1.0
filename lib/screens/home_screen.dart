@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_template/helpers/config.dart';
 import 'package:flutter_starter_template/values/assets/splash_screen_assets.dart';
 import 'package:flutter_starter_template/values/colors.dart';
 import 'package:flutter_starter_template/widgets/common/input/app_button.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -39,7 +41,9 @@ class HomeScreen extends ConsumerWidget {
                 ),
                 child: AppButton(
                   title: 'Get started',
-                  onTap: () {},
+                  onTap: () {
+                    context.go(AppRoutes.chooseCharacterScreenRouteName);
+                  },
                 ),
               ),
             ],

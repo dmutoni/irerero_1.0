@@ -107,7 +107,6 @@
 				64AEF0009A6D4BB8A07B28DC /* Pods-RunnerTests.release.xcconfig */,
 				6B86C5DD4A8E0EE7C0C0FD89 /* Pods-RunnerTests.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -480,6 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterStarterTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -680,6 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterStarterTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

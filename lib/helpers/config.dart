@@ -5,4 +5,5 @@ abstract class AppRoutes {
   static const String signupScreenRouteName = '/signup';
   static const String authCheckerRouteName = '/authChecker';
   static const String errorScreenRouteName = '/errorScreen';
+  static const String chooseCharacterScreenRouteName = '/chooseCharacterScreen';
 }
