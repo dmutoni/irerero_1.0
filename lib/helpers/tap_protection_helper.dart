@@ -4,7 +4,7 @@ import 'package:flutter_starter_template/values/durations.dart';
 class TapProtectionHelper {
   static bool _isTapEnabled = true;
   static final int _defaultDelayDuration =
-      Durations.naturalDelay.inMilliseconds;
+      AppDurations.naturalDelay.inMilliseconds;
   static int? _blockedWidgetHash;
 
   static Future<dynamic> protect(Function function,

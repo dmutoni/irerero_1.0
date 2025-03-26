@@ -48,7 +48,7 @@ class AppButton extends StatelessWidget {
     }
 
     return AnimatedContainer(
-      duration: Durations.fast,
+      duration: AppDurations.fast,
       decoration: BoxDecoration(
         color: backgroundColor,
         border: Border.all(
@@ -64,12 +64,12 @@ class AppButton extends StatelessWidget {
         child: AppProtectedInkWell.Create(
           onTap: () async {
             if (isLoading) return;
-            await Future.delayed(Durations.onTapDelay);
+            await Future.delayed(AppDurations.onTapDelay);
             isEnabled ? onTap.call() : disabledOnTap?.call();
           },
           awaitOnTap: awaitOnTap,
           child: AnimatedSize(
-            duration: Durations.fast,
+            duration: AppDurations.fast,
             child: Container(
               constraints: BoxConstraints(
                 minHeight: isVisible ? height ?? Dimens.inputHeight : 0,

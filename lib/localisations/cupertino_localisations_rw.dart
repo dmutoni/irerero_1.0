@@ -184,4 +184,30 @@ class CupertinoLocalizationsRw extends CupertinoLocalizations {
   @override
   String datePickerDayOfMonth(int dayIndex, [int? weekDay]) =>
       dayIndex.toString();
+
+  @override
+  // TODO: implement clearButtonLabel
+  String get clearButtonLabel => throw UnimplementedError();
+
+  @override
+  String datePickerStandaloneMonth(int monthIndex) {
+    // TODO: implement datePickerStandaloneMonth
+    throw UnimplementedError();
+  }
+
+  @override
+  // TODO: implement lookUpButtonLabel
+  String get lookUpButtonLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement menuDismissLabel
+  String get menuDismissLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement searchWebButtonLabel
+  String get searchWebButtonLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement shareButtonLabel
+  String get shareButtonLabel => throw UnimplementedError();
 }

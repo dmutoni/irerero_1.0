@@ -129,7 +129,7 @@ class _AppTextInputState extends State<AppTextInput> {
         return Column(
           children: [
             AnimatedContainer(
-              duration: Durations.normal,
+              duration: AppDurations.normal,
               constraints: const BoxConstraints(
                 minHeight: Dimens.inputHeight,
                 maxHeight: Dimens.inputHeight,
@@ -189,9 +189,9 @@ class _AppTextInputState extends State<AppTextInput> {
               ),
             ),
             AnimatedSize(
-              duration: Durations.quick,
+              duration: AppDurations.quick,
               child: AnimatedSwitcher(
-                duration: Durations.quick,
+                duration: AppDurations.quick,
                 child: formstate.errorText != null
                     ? Padding(
                         key: ValueKey(formstate.errorText),

@@ -50,4 +50,18 @@ abstract class Styles {
     color: ThemeColors.white,
     height: 16.0 / 14.0,
   );
+
+  static const TextStyle chooseCharacterHeaderTitle = TextStyle(
+    fontFamily: _coiny,
+    fontSize: 40,
+    fontWeight: FontWeight.bold,
+    color: ThemeColors.primaryAccent, // Stroke color
+    shadows: [
+      Shadow(
+        blurRadius: 0.2,
+        color: ThemeColors.primaryColor,
+        offset: Offset(1, 1), // Adjust this offset to control the stroke width
+      ),
+    ],
+  );
 }

@@ -17,7 +17,7 @@ abstract class SnackbarHelper {
     required AppTopSnackbarLevel level,
     AppTopSnackbarVariant variant = AppTopSnackbarVariant.message,
     VoidCallback? onTap,
-    Duration closeInterval = Durations.topSnackbarDuration,
+    Duration closeInterval = AppDurations.topSnackbarDuration,
     required BuildContext context,
   }) async {
     OverlayState? overlayState = Overlay.of(context);

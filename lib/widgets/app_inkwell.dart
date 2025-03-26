@@ -27,7 +27,7 @@ class AppProtectedInkWell {
     Color? focusColor,
     Color? hoverColor,
     Color? highlightColor,
-    MaterialStateProperty<Color?>? overlayColor,
+    WidgetStateProperty<Color?>? overlayColor,
     Color? splashColor,
     InteractiveInkFeatureFactory? splashFactory,
     double? radius,

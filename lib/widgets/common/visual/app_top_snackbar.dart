@@ -15,7 +15,7 @@ class AppTopSnackbar extends StatefulWidget {
     required this.message,
     required this.onDismissed,
     this.variant = AppTopSnackbarVariant.message,
-    this.closeInterval = Durations.carouselInterval,
+    this.closeInterval = AppDurations.carouselInterval,
   }) : super(key: key);
 
   @override
@@ -33,7 +33,7 @@ class _AppTopSnackbarState extends State<AppTopSnackbar>
 
     animationController = AnimationController(
       vsync: this,
-      duration: Durations.slow,
+      duration: AppDurations.slow,
     );
 
     Tween<Offset> offsetTween = Tween<Offset>(
@@ -113,7 +113,7 @@ class _AppTopSnackbarState extends State<AppTopSnackbar>
                       width: Dimens.marginLarge,
                       child: MaterialButton(
                         onPressed: () async {
-                          await Future.delayed(Durations.onTapDelay);
+                          await Future.delayed(AppDurations.onTapDelay);
                           animationController.reverse();
                         },
                         shape: const CircleBorder(),

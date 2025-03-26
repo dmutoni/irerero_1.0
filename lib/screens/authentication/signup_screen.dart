@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/enums/widget_configurations/app_top_snackbar_level.dart';
 import 'package:flutter_starter_template/enums/widget_configurations/app_top_snackbar_variant.dart';
@@ -248,7 +249,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                             variant: AppTopSnackbarVariant.message,
                             context: context,
                           );
-                        } on FirebaseAuthException catch (e) {
+                        } on FirebaseException catch (e) {
                           Map<String, String> errorMessages = {
                             'email-already-in-use':
                                 'Email has already been used. Please use another email.',

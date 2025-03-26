@@ -6,4 +6,5 @@ abstract class AppRoutes {
   static const String authCheckerRouteName = '/authChecker';
   static const String errorScreenRouteName = '/errorScreen';
   static const String chooseCharacterScreenRouteName = '/chooseCharacterScreen';
+  static const String chooseLanguageScreenRouteName = '/chooseLanguageScreen';
 }

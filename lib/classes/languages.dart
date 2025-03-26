@@ -1,3 +1,5 @@
+import 'package:flutter_starter_template/values/assets/language_assets.dart';
+
 class Language {
   final int? id;
   final String? name;
@@ -16,19 +18,19 @@ class Language {
       const Language(
         id: 1,
         name: 'Kinyarwanda',
-        flag: '🇷🇼',
+        flag: LanguageAssets.kinyarwanda,
         languageCode: 'rw',
       ),
       const Language(
         id: 2,
         name: 'English',
-        flag: '🇺🇸',
+        flag: LanguageAssets.english,
         languageCode: 'en',
       ),
       const Language(
         id: 3,
         name: 'French',
-        flag: '🇫🇷',
+        flag: LanguageAssets.french,
         languageCode: 'fr',
       ),
     ];

@@ -30,10 +30,10 @@ dependencies:
     sdk: flutter
   intl: any
   shared_preferences: ^2.2.2
-  firebase_core: ^2.24.2
+  # firebase_database: ^11.1.1
+  # firebase_storage: ^12.2.0
   animated_size_and_fade: ^3.0.1
   flutter_svg: ^2.0.9
-  firebase_auth: ^4.16.0
   equatable: ^2.0.5
   intersperse: ^2.0.0
   google_sign_in: ^6.1.6
@@ -41,6 +41,8 @@ dependencies:
   go_router_builder: ^2.4.1
   one_context: ^4.0.0
   flame: ^1.9.1
+  firebase_auth: ^5.5.1
+  firebase_core: ^3.12.1
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +74,7 @@ flutter:
     - assets/images/login/
     - assets/images/splash/
     - assets/images/characters/
+    - assets/images/languages/
 
   fonts:
     - family: Coiny

@@ -1,4 +1,4 @@
-abstract class Durations {
+abstract class AppDurations {
   static const fast = Duration(milliseconds: 100);
   static const quick = Duration(milliseconds: 175);
   static const haste = Duration(milliseconds: 200);

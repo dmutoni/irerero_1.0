@@ -14,8 +14,8 @@ class AppAnimatedSwitcher extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => AnimatedSizeAndFade(
-        fadeDuration: Durations.normal,
-        sizeDuration: Durations.normal,
+        fadeDuration: AppDurations.normal,
+        sizeDuration: AppDurations.normal,
         sizeCurve: Curves.easeInOut,
         alignment: alignment,
         child: child,

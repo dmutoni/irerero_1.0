@@ -494,4 +494,32 @@ class MaterialLocalizationsRw extends MaterialLocalizations {
   String scrimOnTapHint(String modalRouteContentName) {
     return 'null';
   }
+
+  @override
+  // TODO: implement clearButtonTooltip
+  String get clearButtonTooltip => throw UnimplementedError();
+
+  @override
+  // TODO: implement lookUpButtonLabel
+  String get lookUpButtonLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement menuDismissLabel
+  String get menuDismissLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement scanTextButtonLabel
+  String get scanTextButtonLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement searchWebButtonLabel
+  String get searchWebButtonLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement selectedDateLabel
+  String get selectedDateLabel => throw UnimplementedError();
+
+  @override
+  // TODO: implement shareButtonLabel
+  String get shareButtonLabel => throw UnimplementedError();
 }

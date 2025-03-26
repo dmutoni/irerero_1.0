@@ -63,13 +63,13 @@ ThemeData getAppTheme({
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        padding: MaterialStateProperty.all<EdgeInsets>(
+        padding: WidgetStateProperty.all<EdgeInsets>(
           const EdgeInsets.symmetric(
             vertical: Dimens.marginDefault,
             horizontal: Dimens.marginMedium,
           ),
         ),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(
               Dimens.radiusDefault,
@@ -77,18 +77,18 @@ ThemeData getAppTheme({
           ),
         ),
         backgroundColor:
-            MaterialStateProperty.all<Color>(ThemeColors.primaryAccent),
+            WidgetStateProperty.all<Color>(ThemeColors.primaryAccent),
       ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        padding: MaterialStateProperty.all<EdgeInsets>(
+        padding: WidgetStateProperty.all<EdgeInsets>(
           const EdgeInsets.symmetric(
             vertical: Dimens.marginDefault,
             horizontal: Dimens.marginMedium,
           ),
         ),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(
               Dimens.radiusDefault,
@@ -96,7 +96,7 @@ ThemeData getAppTheme({
           ),
         ),
         backgroundColor:
-            MaterialStateProperty.all<Color>(ThemeColors.primaryAccent),
+            WidgetStateProperty.all<Color>(ThemeColors.primaryAccent),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -118,7 +118,7 @@ ThemeData getAppTheme({
     ),
     iconButtonTheme: IconButtonThemeData(
       style: ButtonStyle(
-        iconColor: MaterialStateProperty.all<Color>(
+        iconColor: WidgetStateProperty.all<Color>(
           ThemeColors.black.withOpacity(0.5),
         ),
       ),
