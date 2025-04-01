@@ -27,12 +27,12 @@ class Language {
         flag: LanguageAssets.english,
         languageCode: 'en',
       ),
-      const Language(
-        id: 3,
-        name: 'French',
-        flag: LanguageAssets.french,
-        languageCode: 'fr',
-      ),
+      // const Language(
+      //   id: 3,
+      //   name: 'French',
+      //   flag: LanguageAssets.french,
+      //   languageCode: 'fr',
+      // ),
     ];
   }
 }

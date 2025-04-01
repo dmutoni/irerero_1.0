@@ -7,4 +7,5 @@ abstract class AppRoutes {
   static const String errorScreenRouteName = '/errorScreen';
   static const String chooseCharacterScreenRouteName = '/chooseCharacterScreen';
   static const String chooseLanguageScreenRouteName = '/chooseLanguageScreen';
+  static const String numbersScreenRouteName = '/numbersScreen';
 }

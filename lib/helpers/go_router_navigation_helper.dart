@@ -6,6 +6,7 @@ import 'package:flutter_starter_template/screens/authentication/signup_screen.da
 import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/screens/choose_language_screen.dart';
 import 'package:flutter_starter_template/screens/common/error_screen.dart';
+import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
 import 'package:flutter_starter_template/screens/home_screen.dart';
 import 'package:flutter_starter_template/widgets/auth_checker.dart';
 import 'package:go_router/go_router.dart';
@@ -60,12 +61,17 @@ final routerProvider = Provider<GoRouter>(
           path: AppRoutes.chooseLanguageScreenRouteName,
           builder: (context, state) => const ChooseLanguageScreen(),
         ),
+        GoRoute(
+          name: 'numbersScreen',
+          path: AppRoutes.numbersScreenRouteName,
+          builder: (context, state) => const NumbersScreen(),
+        )
       ],
       errorBuilder: (context, state) => const ErrorScreen(),
       redirect: (context, state) {
         authState.when(
           data: (data) {
-            // return const AuthChecker();
+            return const AuthChecker();
           },
           error: (error, stackTrace) => const ErrorScreen(),
           loading: () => const CircularProgressIndicator(),
