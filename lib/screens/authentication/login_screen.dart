@@ -5,8 +5,10 @@ import 'package:flutter_starter_template/enums/widget_configurations/app_top_sna
 import 'package:flutter_starter_template/enums/widget_configurations/app_top_snackbar_variant.dart';
 import 'package:flutter_starter_template/helpers/config.dart';
 import 'package:flutter_starter_template/helpers/email_validation_helper.dart';
+import 'package:flutter_starter_template/helpers/navigator_helper.dart';
 import 'package:flutter_starter_template/helpers/snackbar_helper.dart';
 import 'package:flutter_starter_template/repository/auth_repository.dart';
+import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/theme/theme_constants.dart';
 import 'package:flutter_starter_template/theme/theme_manager.dart';
 import 'package:flutter_starter_template/values/assets/login_assets.dart';
@@ -226,11 +228,13 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       onTap: () async {
                         if (!_formKey.currentState!.validate()) return;
                         try {
-                          await ref
-                              .read(authenticationProvider.notifier)
-                              .signInWithEmailAndPassword(
-                                  email: _emailController.text,
-                                  password: _passwordController.text);
+                          // await ref
+                          //     .read(authenticationProvider.notifier)
+                          //     .signInWithEmailAndPassword(
+                          //         email: _emailController.text,
+                          //         password: _passwordController.text);
+                          NavigatorHelper.pushNamed(
+                              ChooseCharacterScreen.routeName);
                         } on FirebaseAuthException catch (e) {
                           Map<String, String> errorMessages = {
                             'INVALID_LOGIN_CREDENTIALS': 'Invalid credentials',

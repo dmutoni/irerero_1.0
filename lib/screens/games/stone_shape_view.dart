@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/helpers/navigator_helper.dart';
 import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
+// import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
+import 'package:flutter_starter_template/screens/games/story.dart';
 
 class StoneShapesView extends StatelessWidget {
   final ScrollController? scrollController;
@@ -16,9 +18,12 @@ class StoneShapesView extends StatelessWidget {
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
+            // NavigatorHelper.pushNamed(
+            //   NumbersScreen.routeName,
+            // );
             NavigatorHelper.pushNamed(
-              NumbersScreen.routeName,
-              arguments: 'numbers',
+              Story.routeName,
+              // arguments: 'numbers',
             );
           },
           child: Align(

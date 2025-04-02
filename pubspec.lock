@@ -690,6 +690,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
+  page_flip:
+    dependency: "direct main"
+    description:
+      name: page_flip
+      sha256: "3cb0b8ac3a88e1a55d8cb8869287ad65acb87a306b10c28b56e5ff87fc0ce181"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.4"
   path:
     dependency: transitive
     description:

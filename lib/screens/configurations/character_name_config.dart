@@ -25,8 +25,6 @@ extension CharacterName on Character {
         return 'Pinguine';
       case Character.cat:
         return 'Cat';
-      default:
-        return '';
     }
   }
 }
@@ -47,8 +45,6 @@ extension CharacterAsset on Character {
         return CharacterAssets.pinguine;
       case Character.cat:
         return CharacterAssets.cat;
-      default:
-        return '';
     }
   }
 }

@@ -7,7 +7,6 @@ import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/screens/choose_language_screen.dart';
 import 'package:flutter_starter_template/screens/common/error_screen.dart';
 import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
-import 'package:flutter_starter_template/screens/home_page_view.dart';
 import 'package:flutter_starter_template/screens/home_screen.dart';
 import 'package:flutter_starter_template/widgets/auth_checker.dart';
 import 'package:go_router/go_router.dart';

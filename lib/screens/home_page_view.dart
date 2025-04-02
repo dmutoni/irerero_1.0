@@ -16,9 +16,9 @@ class _HomePageViewPageState extends State<HomePageView>
   // You can adjust the speeds by changing these multipliers.
   // The background moves slower than the foreground.
   final double backgroundSpeedMultiplier =
-      1.0; // One full screen scroll per cycle
+      0.1; // One full screen scroll per cycle
   final double foregroundSpeedMultiplier =
-      2.0; // Two full screen scrolls per cycle
+      0.2; // Two full screen scrolls per cycle
 
   @override
   void initState() {
@@ -85,8 +85,6 @@ class _HomePageViewPageState extends State<HomePageView>
                   ],
                 ),
               ),
-              // Foreground Layer: two copies of stone images moving faster.
-              // Foreground Layer: endless StoneShapesView copies.
               Positioned.fill(
                 child: Stack(
                   children: [
@@ -97,35 +95,14 @@ class _HomePageViewPageState extends State<HomePageView>
                       right: 0,
                       child: SizedBox(
                         height: screenHeight,
-                        // Using your custom StoneShapesView widget.
                         child: const StoneShapesView(
-                          // No scroll controller needed since we're animating the whole widget.
                           scrollController: null,
                           texts: [
                             Text('Numbers'),
-                            Text('Colors'),
+                            Text('Stories'),
                             Text('Shapes'),
                             Text('Animals'),
-                            Text('Shape 5'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    // Second copy to ensure a seamless loop.
-                    Positioned(
-                      top: foregroundOffset - screenHeight,
-                      left: 0,
-                      right: 0,
-                      child: SizedBox(
-                        height: screenHeight,
-                        child: const StoneShapesView(
-                          scrollController: null,
-                          texts: [
-                            Text('Shape 1'),
-                            Text('Shape 2'),
-                            Text('Shape 3'),
-                            Text('Shape 4'),
-                            Text('Shape 5'),
+                            Text('Colors'),
                           ],
                         ),
                       ),

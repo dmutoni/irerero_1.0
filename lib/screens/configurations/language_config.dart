@@ -15,8 +15,6 @@ extension LanguageName on Language {
         return 'French';
       case Language.kinyarwanda:
         return 'Kinyarwanda';
-      default:
-        return '';
     }
   }
 }
@@ -30,8 +28,6 @@ extension LanguageAsset on Language {
         return LanguageAssets.french;
       case Language.kinyarwanda:
         return LanguageAssets.kinyarwanda;
-      default:
-        return '';
     }
   }
 }

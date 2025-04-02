@@ -1,8 +1,10 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/helpers/navigator_helper.dart';
 import 'package:flutter_starter_template/screens/games/number_detail_screen.dart';
+import 'package:flutter_starter_template/screens/games/number_detail_screen2.dart';
 
 class NumbersScreen extends StatefulWidget {
   final String? type;
@@ -57,7 +59,7 @@ class _NumbersScreenState extends State<NumbersScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print('numbers screen ${widget.type}');
+    print(' widget.type: ${widget.type}');
     return Scaffold(
       body: Stack(
         children: [
@@ -77,7 +79,6 @@ class _NumbersScreenState extends State<NumbersScreen> {
                 return const Center(child: Text('No fruit images found.'));
               }
 
-              // We have a list of all fruit image paths.
               final fruitImages = snapshot.data!;
               final randomGenerator = Random();
 
@@ -108,9 +109,15 @@ class _NumbersScreenState extends State<NumbersScreen> {
                     final numberWord = numberToWord(count);
                     return GestureDetector(
                       onTap: () {
-                        NavigatorHelper.pushNamed(
-                          NumberDetailScreen.routeName,
-                        );
+                        if (index == 0) {
+                          NavigatorHelper.pushNamed(
+                            NumberDetailScreen.routeName,
+                          );
+                        } else if (index == 1) {
+                          NavigatorHelper.pushNamed(
+                            NumberDetailScreen2.routeName,
+                          );
+                        }
                       },
                       child: Stack(
                         children: [
@@ -123,12 +130,10 @@ class _NumbersScreenState extends State<NumbersScreen> {
                               ),
                             ),
                           ),
-                          // The fruit images inside the box
                           Center(
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                // Display the fruit images in a Wrap to fit multiple copies.
                                 Wrap(
                                   alignment: WrapAlignment.center,
                                   runSpacing: 4,
@@ -136,13 +141,12 @@ class _NumbersScreenState extends State<NumbersScreen> {
                                   children: List.generate(count, (i) {
                                     return Image.asset(
                                       randomFruit,
-                                      width: 30, // Adjust size as needed.
+                                      width: 30,
                                       height: 30,
                                     );
                                   }),
                                 ),
                                 const SizedBox(height: 8),
-                                // Display the number word.
                                 Text(
                                   numberWord,
                                   style: const TextStyle(

@@ -44,7 +44,7 @@ class HomeScreen extends ConsumerWidget {
                   onTap: () {
                     // context.go(AppRoutes.chooseCharacterScreenRouteName);
                     NavigatorHelper.pushNamed(
-                      AppRoutes.chooseCharacterScreenRouteName,
+                      AppRoutes.loginScreenRouteName,
                     );
                   },
                 ),
