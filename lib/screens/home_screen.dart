@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/helpers/config.dart';
+import 'package:flutter_starter_template/helpers/navigator_helper.dart';
 import 'package:flutter_starter_template/values/assets/splash_screen_assets.dart';
 import 'package:flutter_starter_template/values/colors.dart';
 import 'package:flutter_starter_template/widgets/common/input/app_button.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class HomeScreen extends ConsumerWidget {
-  static const String routeName = '/home';
+  static const String routeName = '/';
 
   const HomeScreen({super.key});
 
@@ -42,7 +42,10 @@ class HomeScreen extends ConsumerWidget {
                 child: AppButton(
                   title: 'Get started',
                   onTap: () {
-                    context.go(AppRoutes.chooseCharacterScreenRouteName);
+                    // context.go(AppRoutes.chooseCharacterScreenRouteName);
+                    NavigatorHelper.pushNamed(
+                      AppRoutes.chooseCharacterScreenRouteName,
+                    );
                   },
                 ),
               ),

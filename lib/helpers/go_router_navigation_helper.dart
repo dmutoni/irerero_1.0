@@ -7,6 +7,7 @@ import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/screens/choose_language_screen.dart';
 import 'package:flutter_starter_template/screens/common/error_screen.dart';
 import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
+import 'package:flutter_starter_template/screens/home_page_view.dart';
 import 'package:flutter_starter_template/screens/home_screen.dart';
 import 'package:flutter_starter_template/widgets/auth_checker.dart';
 import 'package:go_router/go_router.dart';
@@ -65,7 +66,12 @@ final routerProvider = Provider<GoRouter>(
           name: 'numbersScreen',
           path: AppRoutes.numbersScreenRouteName,
           builder: (context, state) => const NumbersScreen(),
-        )
+        ),
+        // GoRoute(
+        //   name: 'homePageScreen',
+        //   path: AppRoutes.homePageScreenRouteName,
+        //   builder: (context, state) => const HomePageView(),
+        // ),
       ],
       errorBuilder: (context, state) => const ErrorScreen(),
       redirect: (context, state) {

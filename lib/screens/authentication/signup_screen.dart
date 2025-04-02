@@ -24,6 +24,7 @@ import 'package:intersperse/intersperse.dart';
 enum InputLabelVariant { label, hint }
 
 class SignupScreen extends ConsumerStatefulWidget {
+  static const String routeName = '/signupScreen';
   const SignupScreen({
     super.key,
   });

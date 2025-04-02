@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/data/providers/characters/character_provider.dart';
-import 'package:flutter_starter_template/helpers/config.dart';
+import 'package:flutter_starter_template/helpers/navigator_helper.dart';
+import 'package:flutter_starter_template/screens/choose_language_screen.dart';
 import 'package:flutter_starter_template/screens/configurations/character_name_config.dart';
 import 'package:flutter_starter_template/theme/styles.dart';
 import 'package:flutter_starter_template/values/colors.dart';
 import 'package:flutter_starter_template/values/dimens.dart';
 import 'package:flutter_starter_template/widgets/common/input/app_button.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class ChooseCharacterScreen extends ConsumerStatefulWidget {
+  static const String routeName = '/chooseCharacterScreen';
   const ChooseCharacterScreen({super.key});
 
   @override
@@ -95,8 +96,8 @@ class _ChooseCharacterScreenState extends ConsumerState<ChooseCharacterScreen> {
                 title: 'Get started',
                 isEnabled: selectedCharacter != null,
                 onTap: () {
-                  context.go(
-                    AppRoutes.chooseLanguageScreenRouteName,
+                  NavigatorHelper.pushNamed(
+                    ChooseLanguageScreen.routeName,
                   );
                 },
               ),

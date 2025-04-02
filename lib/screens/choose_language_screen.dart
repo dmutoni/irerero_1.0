@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/classes/languages.dart';
 import 'package:flutter_starter_template/data/providers/languages/language_provider.dart';
 import 'package:flutter_starter_template/helpers/config.dart';
+import 'package:flutter_starter_template/helpers/navigator_helper.dart';
+import 'package:flutter_starter_template/screens/home_page_view.dart';
 import 'package:flutter_starter_template/theme/styles.dart';
 import 'package:flutter_starter_template/values/colors.dart';
 import 'package:flutter_starter_template/values/dimens.dart';
 import 'package:flutter_starter_template/widgets/common/input/app_button.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class ChooseLanguageScreen extends ConsumerStatefulWidget {
+  static const String routeName = '/chooseLanguageScreen';
+
   const ChooseLanguageScreen({super.key});
 
   @override
@@ -86,8 +89,8 @@ class _ChooseLanguageScreenState extends ConsumerState<ChooseLanguageScreen> {
                 title: 'Get started',
                 isEnabled: selectedLanguage != null,
                 onTap: () {
-                  context.go(
-                    AppRoutes.numbersScreenRouteName,
+                  NavigatorHelper.pushNamed(
+                    HomePageView.routeName,
                   );
                 },
               ),

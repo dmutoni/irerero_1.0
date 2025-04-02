@@ -8,4 +8,5 @@ abstract class AppRoutes {
   static const String chooseCharacterScreenRouteName = '/chooseCharacterScreen';
   static const String chooseLanguageScreenRouteName = '/chooseLanguageScreen';
   static const String numbersScreenRouteName = '/numbersScreen';
+  static const String homePageScreenRouteName = '/homePageScreen';
 }
