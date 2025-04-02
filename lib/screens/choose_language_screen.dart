@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_starter_template/classes/languages.dart';
 import 'package:flutter_starter_template/data/providers/languages/language_provider.dart';
-import 'package:flutter_starter_template/helpers/config.dart';
 import 'package:flutter_starter_template/helpers/navigator_helper.dart';
 import 'package:flutter_starter_template/screens/home_page_view.dart';
 import 'package:flutter_starter_template/theme/styles.dart';

@@ -4,7 +4,11 @@ import 'package:flutter_starter_template/localisations/cupertino_localisations_r
 import 'package:flutter_starter_template/localisations/material_localisations_rw.dart';
 import 'package:flutter_starter_template/screens/choose_character_screen.dart';
 import 'package:flutter_starter_template/screens/choose_language_screen.dart';
+import 'package:flutter_starter_template/screens/games/number_detail_screen.dart';
+import 'package:flutter_starter_template/screens/games/number_details_screen_with_puppy_background.dart';
 import 'package:flutter_starter_template/screens/games/numbers_screen.dart';
+import 'package:flutter_starter_template/screens/games/one_boy_playing_screen.dart';
+import 'package:flutter_starter_template/screens/games/one_puppy_screen.dart';
 import 'package:flutter_starter_template/screens/home_page_view.dart';
 import 'package:flutter_starter_template/screens/home_screen.dart';
 import 'package:flutter_starter_template/theme/theme_constants.dart';
@@ -66,9 +70,6 @@ class _MyAppState extends ConsumerState<MyApp> {
       navigatorKey: OneContext().key,
       builder: OneContext().builder,
       theme: getAppTheme(context: context, isDarkTheme: themeMode),
-      // routeInformationParser: router.routeInformationParser,
-      // routerDelegate: router.routerDelegate,
-      // routeInformationProvider: router.routeInformationProvider,
       localizationsDelegates: const [
         ...AppLocalizations.localizationsDelegates,
         MaterialLocalizationsRw.delegate,
@@ -84,23 +85,12 @@ class _MyAppState extends ConsumerState<MyApp> {
             const ChooseLanguageScreen(),
         HomePageView.routeName: (context) => const HomePageView(),
         NumbersScreen.routeName: (context) => const NumbersScreen(),
+        NumberDetailScreen.routeName: (context) => const NumberDetailScreen(),
+        NumberDetailsScreenWithPuppyBackground.routeName: (context) =>
+            const NumberDetailsScreenWithPuppyBackground(),
+        OnePuppyScreen.routeName: (context) => const OnePuppyScreen(),
+        OneBoyPlayingScreen.routeName: (context) => const OneBoyPlayingScreen(),
       },
     );
-
-    // return MaterialApp.router(
-    //   title: 'Flutter starter template',
-    //   debugShowCheckedModeBanner: false,
-    //   theme: getAppTheme(context: context, isDarkTheme: themeMode),
-    //   routeInformationParser: router.routeInformationParser,
-    //   routerDelegate: router.routerDelegate,
-    //   routeInformationProvider: router.routeInformationProvider,
-    //   localizationsDelegates: const [
-    //     ...AppLocalizations.localizationsDelegates,
-    //     MaterialLocalizationsRw.delegate,
-    //     CupertinoLocalizationsRw.delegate,
-    //   ],
-    //   supportedLocales: AppLocalizations.supportedLocales,
-    //   locale: _locale,
-    // );
   }
 }

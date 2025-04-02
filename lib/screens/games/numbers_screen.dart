@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_starter_template/helpers/navigator_helper.dart';
+import 'package:flutter_starter_template/screens/games/number_detail_screen.dart';
 
 class NumbersScreen extends StatefulWidget {
   final String? type;
@@ -59,15 +61,12 @@ class _NumbersScreenState extends State<NumbersScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background
           Positioned.fill(
             child: Image.asset(
-              'assets/images/backgrounds/screen_background.png', // Replace with your background
+              'assets/images/backgrounds/screen_background.png',
               fit: BoxFit.cover,
             ),
           ),
-
-          // Build the grid of boxes AFTER we load the fruit images.
           FutureBuilder<List<String>>(
             future: loadFruitImages(context),
             builder: (context, snapshot) {
@@ -109,11 +108,12 @@ class _NumbersScreenState extends State<NumbersScreen> {
                     final numberWord = numberToWord(count);
                     return GestureDetector(
                       onTap: () {
-                        // Handle tap if needed
+                        NavigatorHelper.pushNamed(
+                          NumberDetailScreen.routeName,
+                        );
                       },
                       child: Stack(
                         children: [
-                          // The wooden box background
                           Positioned.fill(
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(12),
