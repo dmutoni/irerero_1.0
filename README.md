@@ -101,6 +101,8 @@ flutter pub get
 flutter run
 ```
 
+> 🚀 Use `flutter build apk` or `flutter build ios` for release builds
+
 ## 🧠 How It Works
 - The app displays number learning screens, story pages, and games.
 
